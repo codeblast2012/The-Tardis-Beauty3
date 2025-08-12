@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./services.css">
+</head>
+<body>
+  <header>
+    <!-- Add a back button or logo here -->
+    
+        <a href="./index.html" class="btn btn-sm btn-outline-primary mx-1" > <button   style="color: pink; background-color:  #25255f; margin-left: 50px; margin-top: 10px; padding-left: 19px; padding-right: 19px; padding-top: 10px; padding-bottom: 10px; border-radius: 3px; border-color: white; border: 4px;" >
+          Go Back
+        </button> </a>
+
+        
+   
+  </header>
+
+  <main>
+    <h1>Nail Services</h1>
+  
+    <div class="service-box">
+        <div class="second-container">
+        <p class="main">Gelish Manicure <a href="https://n1324127.alteg.io/company/1266333/record-type?o=m2770815"> <button>Book</button> </a></p> </div>
+        <p class="second">A long-lasting gel polish application using Gelish products. Keeps your nails shiny and chip-free for up to 2 weeks.  </p>
+        <p>AED 150</p>
+      </div>
+      
+      <div class="service-box">
+        <div class="second-container">
+        <p class="main">Gelish Pedicure  <a href="https://n1324127.alteg.io/company/1266333/record-type?o=m2770815"> <button>Book</button> </a></p></div>
+        <p class="second"> A relaxing pedicure with Gelish gel polish. Smooths your feet and adds a glossy, durable finish to your toenails.</p>
+        <p>AED 160</p>
+      </div>
+      
+      <div class="service-box">
+        <div class="second-container">
+        <p class="main">Classic Mani & Pedi <a href="https://n1324127.alteg.io/company/1266333/record-type?o=m2770815"> <button>Book</button> </a></p></div>
+        <p class="second"> Enjoy a traditional manicure and pedicure with premium nail polishes like Essie and OPI. Perfect for a neat, timeless look.</p>
+        <p>AED 200</p>
+      </div>
+      
+      <div class="service-box">
+        <div class="second-container">
+        <p  class="main">Nail Extensions w/ Gel Polish <a href="https://n1324127.alteg.io/company/1266333/record-type?o=m2770815"> <button>Book</button> </a></p> </div>
+        <p class="second">Extend and enhance your natural nails with high-quality extensions, finished with a glossy Gelish gel polish for extra shine and durability.</p>
+        <p>AED 260</p>
+      </div>
+      
+   <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if we have a service to scroll to
+        const serviceToScroll = sessionStorage.getItem("scrollToService");
+        
+        if (serviceToScroll) {
+            // Find the service box that contains this service name
+            const serviceBoxes = document.querySelectorAll('.service-box');
+            
+            for (let box of serviceBoxes) {
+                const serviceName = box.querySelector('.main').textContent.trim();
+                if (serviceName.includes(serviceToScroll)) {
+                    // Scroll to this box
+                    box.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Highlight the box temporarily
+                    box.style.boxShadow = '0 0 0 2px pink';
+                    setTimeout(() => {
+                        box.style.boxShadow = '';
+                    }, 2000);
+                    
+                    // Clear the stored value
+                    sessionStorage.removeItem("scrollToService");
+                    break;
+                }
+            }
+        }
+    });
+
+   </script>
+      
+
+   
+  </main>
+</body>
+</html>

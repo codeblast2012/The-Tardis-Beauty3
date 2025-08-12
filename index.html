@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./makeup.css">
+    <title>the Tardis</title>
+    <style>
+        /* Custom CSS for the phone mockup and carousel */
+        .phone-mockup-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px; /* Adjust based on your mockup size */
+            margin: 0 auto;
+        }
+        
+        .phone-mockup {
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .carousel-container {
+            position: absolute;
+            top: 5.5%; /* Adjust these values to fit your mockup */
+            left: 7.5%;
+            width: 85%;
+            height: 89%;
+            overflow: hidden;
+            border-radius: 25px; /* Match your phone's screen curvature */
+            z-index: 2;
+        }
+        
+        .carousel-inner, .carousel-item {
+            height: 100%;
+        }
+        
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+     <!--the banner part -->
+    <header class="container-fluid py-3">
+        <div class="d-flex justify-content-between align-items-center">
+          
+          <!-- Left Side: Logo + Company Name -->
+          <div class="d-flex align-items-center">
+            <img class="image-logo" src="./photo_2025-07-27_10-59-37.jpg" alt="Logo" style="height: 70px; width: auto; margin-right: 10px; border-radius: 50%; "  >
+            <h1 class="h5 m-0" class="the-logo-name" style="font-style:italic ; font-weight: bold; color: white;">The Tardis Beauty</h1>
+          </div>
+      
+          <!-- Right Side: Contact Button -->
+          <a href="./about-us.html" class="btn btn-outline-primary" style="margin-right: 20px; background-color :#25255f; border-color:white; color: pink; ">About us</a>
+        </div>
+      </header>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-5 py-5">
+      
+          <!-- Text and Button (Always on top in mobile) -->
+          <div class="col-lg-6 order-1 order-lg-1">
+            <h1 class="display-5 fw-bold lh-1 mb-3" style="font-size: 54px; font-style: italic; ">Book your glow today</h1>
+            <p class="lead">Find and book the best local beauty services.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <div class="search-container">
+                <input type="text" id="serviceSearch" placeholder="Search our services..." style="font-style: italic; font-size: 12px;">
+              </div>
+              <div>
+               
+            <div class="search-container">
+   
+             </div>
+            </div>
+            </div>
+          </div>
+      
+          <!-- Phone Mockup with Carousel (Goes below text on mobile) -->
+          <div class="col-12 col-sm-10 col-lg-6 mx-auto order-2 order-lg-2">
+            <div class="phone-mockup-container">
+              <!-- Phone frame image -->
+              <img src="./3d-high-quality-smartphone-mockup-with-different-angle-isolated-background-show-mobile-app_659151-556.avif" 
+                   class="phone-mockup" 
+                   alt="Phone Frame"">
+      
+              <!-- Carousel inside the phone -->
+              <div class="carousel-container">
+                <div id="phoneCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                      <img src="./photo_2025-07-27_10-59-37.jpg" class="d-block w-100" alt="Company Logo">
+                    </div>
+                    <div class="carousel-item h-100">
+                      <img src="./Screenshot_31-7-2025_23318_www.instagram.com.jpeg" class="d-block w-100" alt="Beauty Service">
+                    </div>
+
+                    <div class="carousel-item h-100">
+                      <img src="./Screenshot_31-7-2025_23339_www.instagram.com.jpeg" class="d-block w-100" alt="Beauty Service">
+                    </div>
+                    <div class="carousel-item h-100">
+                      <img src="./Screenshot_31-7-2025_235159_www.instagram.com.jpeg" class="d-block w-100" alt="Beauty Service">
+                    </div>
+                    <div class="carousel-item h-100">
+                      <img src="./Screenshot_31-7-2025_233227_www.instagram.com.jpeg" class="d-block w-100" alt="Beauty Service">
+                    </div>
+                    <div class="carousel-item h-100">
+                      <img src="./photo_2025-08-09_19-54-24 (2).jpg" class="d-block w-100" alt="Beauty Service">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+            </div>
+        </div>
+    </div>
+    <!-- Beauty Staff Section -->
+<section class="container my-5 py-5" id="our-team">
+    <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold">Our Services</h2>
+        <p class="lead">Explore our range of beauty treatments designed to make you feel confident and radiant."</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Staff Member 1 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card staff-card h-100 border-0 shadow-sm">
+                <img src="./Screenshot_31-7-2025_233153_www.instagram.com.jpeg" class="card-img-top" alt="Makeup Artist">
+                <div class="card-body text-center">
+                    <h5 class="card-title" >Nail Services
+                    </h5>
+                   
+                    <div class="d-flex justify-content-center">
+                        <a href="./nail.html" class="btn btn-sm btn-outline-primary mx-1" style="color: black;">check it</a>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Staff Member 2 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card staff-card h-100 border-0 shadow-sm">
+                <img src="./Screenshot_31-7-2025_235231_www.instagram.com.jpeg" class="card-img-top" alt="Hair Stylist">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Eyelash Services</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="./eyelash.html" class="btn btn-sm btn-outline-primary mx-1" style="color: black;">check it </a>
+                       
+                    </div>
+                </div>
+            </div>
+
+          
+        </div>
+
+        <!-- Add more staff members as needed -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card staff-card h-100 border-0 shadow-sm">
+                <img src="./Screenshot_31-7-2025_235139_www.instagram.com.jpeg" class="card-img-top" alt="Makeup Artist">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Brows Services
+                    </h5>
+                   
+                    <div class="d-flex justify-content-center">
+                        <a href="./brows.html" class="btn btn-sm btn-outline-primary mx-1" style="color: black;">check it </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+
+    <div class="col-md-6 col-lg-3">
+        <div class="card staff-card h-100 border-0 shadow-sm">
+            <img src="./Vrouw laat haar knippen in de schoonheidssalon _ Gratis Foto.jpg" class="card-img-top" alt="Hair Stylist">
+            <div class="card-body text-center">
+                <h5 class="card-title">Hair Services</h5>
+                <div class="d-flex justify-content-center">
+                    <a href="./hair.html" class="btn btn-sm btn-outline-primary mx-1" style="color: black;">check it </a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      
+      
+          
+     
+          <!-- Add more images here -->
+        </div>
+      </div>
+      <hr style="border: 1px solid #ccc; margin-top: 40px;">
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h4 style="color: white;">The TARDIS Beauty Emporium</h4>
+            <p>Jumeirah Lake Towers - Dubai - United Arab Emirates</p>
+            <p>Phone: +971 58 578 4100</p>
+           
+          
+          <div class="footer-right">
+            <p>Follow us on:</p>
+            <a href="https://www.instagram.com/thetardisbeauty" target="_blank" class="insta-link">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+              @thetardisbeauty
+            </a>
+          </div>
+        </div>
+        <p class="footer-bottom">© 2025 The TARDIS Beauty Emporium. All rights reserved.</p>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    
+        
+    
+ 
+        <script>
+
+    //Initialize carousel with options
+        document.addEventListener('DOMContentLoaded', function() {
+            var phoneCarousel = new bootstrap.Carousel(document.getElementById('phoneCarousel'), {
+                interval: 3000, // 3 seconds between slides
+                ride: 'carousel',
+                pause: 'hover', // Pause on hover
+                wrap: true      // Infinite looping
+            });
+        });
+    // Service data - this should match all your services across all pages
+    const services = [
+        {
+            name: "Gelish Manicure",
+            description: "A long-lasting gel polish application using Gelish products...",
+            price: "AED 150",
+            category: "Nail Services",
+            page: "nail.html"
+        },
+        {
+            name: "Gelish Pedicure",
+            description: "A relaxing pedicure with Gelish gel polish...",
+            price: "AED 160",
+            category: "Nail Services",
+            page: "nail.html"
+        },
+        {
+            name: "Classic Mani & Pedi",
+            description: "Enjoy a traditional manicure and pedicure with premium nail polishes...",
+            price: "AED 200",
+            category: "Nail Services",
+            page: "nail.html"
+        },
+        {
+            name: "Nail Extensions w/ Gel Polish",
+            description: "Extend and enhance your natural nails with high-quality extensions...",
+            price: "AED 260",
+            category: "Nail Services",
+            page: "nail.html"
+        },
+        {
+            name: "lash lift with tinting",
+            description: "A natural lash enhancement that lifts and curls your lashes...",
+            price: "AED 250",
+            category: "Eyelash Services",
+            page: "eyelash.html"
+        },
+        {
+            name: "classic lash extentions",
+            description: "One extension is applied to each natural lash for a clean, elegant look...",
+            price: "AED 250",
+            category: "Eyelash Services",
+            page: "eyelash.html"
+        },
+        {
+            name: "2D Lash Extensions",
+            description: "Two lightweight lashes are applied to one natural lash...",
+            price: "AED 280",
+            category: "Eyelash Services",
+            page: "eyelash.html"
+        },
+        {
+            name: "3D Lash Extensions",
+            description: "Three ultra-fine extensions per natural lash for a bold, voluminous effect...",
+            price: "AED 300",
+            category: "Eyelash Services",
+            page: "eyelash.html"
+        },
+        {
+            name: "Brow Lamination with Tinting",
+            description: "A semi-permanent treatment that straightens and sets brow hairs...",
+            price: "AED 250",
+            category: "Brows Services",
+            page: "brows.html"
+        },
+        {
+            name: "Microblading (new)",
+            description: "Hand-drawn, hair-like strokes using pigment to create natural-looking...",
+            price: "AED 950",
+            category: "Brows Services",
+            page: "brows.html"
+        },
+        {
+            name: "Microblading (touch up)",
+            description: "A refresh session to maintain color and shape...",
+            price: "AED 550",
+            category: "Brows Services",
+            page: "brows.html"
+        },
+        {
+            name: "Hair Blowdry (S, M, L)",
+            description: "A professional blowout tailored to your hair length...",
+            price: "AED 100-200",
+            category: "Hair Services",
+            page: "hair.html"
+        },
+        {
+            name: "Hair Keratin/Protein (Short)",
+            description: "A deep conditioning treatment to repair damage...",
+            price: "AED 350-450",
+            category: "Hair Services",
+            page: "hair.html"
+        },
+        {
+            name: "Hair Keratin/Protein (Medium)",
+            description: "Intensive smoothing and strengthening for medium-length hair...",
+            price: "AED 450-550",
+            category: "Hair Services",
+            page: "hair.html"
+        },
+        {
+            name: "Hair Keratin/Protein (Long)",
+            description: "Long hair receives customized care to eliminate tangles...",
+            price: "AED 650-850",
+            category: "Hair Services",
+            page: "hair.html"
+        }
+    ];
+
+    // Search functionality
+    // Search functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById("serviceSearch");
+    
+    // Create search results container (this is correct)
+    const searchResults = document.createElement("div");
+    searchResults.id = "searchResults";
+    searchResults.style.position = "absolute";
+    searchResults.style.backgroundColor = "white";
+    searchResults.style.width = "calc(100% - 20px)";
+    searchResults.style.maxHeight = "200px";
+    searchResults.style.overflowY = "auto";
+    searchResults.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+    searchResults.style.zIndex = "1000";
+    searchResults.style.display = "none";
+    searchResults.style.borderRadius = "4px";
+    searchResults.style.marginTop = "5px";
+    searchResults.style.fontSize = "0.9em";
+    searchResults.style.border = "1px solid #eee";
+    searchInput.parentNode.appendChild(searchResults);
+
+    searchInput.addEventListener("input", function() {
+        const value = this.value.toLowerCase();
+        
+        if (value.length < 2) {
+            searchResults.style.display = "none";
+            return;
+        }
+        
+        const filteredServices = services.filter(service => 
+            service.name.toLowerCase().includes(value) || 
+            service.description.toLowerCase().includes(value) ||
+            service.category.toLowerCase().includes(value)
+        );
+        
+        if (filteredServices.length > 0) {
+            // This is where you put the new compact results HTML
+            searchResults.innerHTML = filteredServices.map(service => `
+                <div class="search-result-item" 
+                     style="padding: 4px 6px; 
+                            border-bottom: 1px solid #f5f5f5; 
+                            cursor: pointer;
+                            line-height: 1.3;
+                           
+                            "
+                     data-page="${service.page}"
+                     data-service="${service.name}">
+                    <strong style="font-size: 0.95em;">${service.name}</strong>
+                    <div style="font-size: 0.8em; color: #666; margin-top: 2px;">${service.category}</div>
+                    <div style="font-size: 0.8em; color: #25255f; margin-top: 2px;">${service.price}</div>
+                </div>
+            `).join("");
+            
+            searchResults.style.display = "block";
+            
+            // Add click handlers to each result
+            document.querySelectorAll(".search-result-item").forEach(item => {
+                item.addEventListener("click", function() {
+                    const page = this.getAttribute("data-page");
+                    const service = this.getAttribute("data-service");
+                    sessionStorage.setItem("scrollToService", service);
+                    window.location.href = page;
+                });
+            });
+        } else {
+            searchResults.innerHTML = `<div style="padding: 10px; color: #666;">No services found</div>`;
+            searchResults.style.display = "block";
+        }
+    });
+    
+    // Hide results when clicking outside
+    document.addEventListener("click", function(e) {
+        if (e.target !== searchInput) {
+            searchResults.style.display = "none";
+        }
+    });
+});
+ 
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById("serviceSearch");
+    const mainContent = document.querySelector('body > .container'); // Adjust selector as needed
+    const overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    document.body.appendChild(overlay);
+
+    
+});
+        
+    </script>
+    <script src="./makeup.js"></script>
+</body>
+</html>

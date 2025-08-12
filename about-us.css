@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(to left , #656594,rgb(241, 190, 198));
+    font-family: 'Playfair Display', serif;;
+}
+
+
+.about-button {
+    padding: 10px 20px;
+  
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background-color: #fff;
+    color: #7a4c99;
+  }
+  

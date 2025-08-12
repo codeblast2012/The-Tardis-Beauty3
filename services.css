@@ -1,0 +1,115 @@
+/* services.css */
+
+/* Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to left , #656594,rgb(241, 190, 198));
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf6f9;
+  padding: 20px;
+  color: #333;
+}
+
+/* Service Section */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 46px;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #25255f;
+}
+
+.service-box {
+  background-color: rgb(248, 225, 229);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.second {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+button {
+  background-color: #25255f;
+  color: pink;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+ 
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .second-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main {
+    font-size: 1.1rem;
+  }
+
+  button {
+    width: auto;
+  text-align: center;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .main {
+    font-size: 1rem;
+  }
+
+  .second {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+    width: auto;          /* prevent full width */
+    padding: 8px 16px;    /* reduce vertical space */
+  }
+  
+}
+/* Add to services.css */
+/* Search container styling */
+
